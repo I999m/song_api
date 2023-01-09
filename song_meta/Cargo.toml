@@ -1,0 +1,12 @@
+[package]
+name = "song_meta"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.21.1", features = ["full"] }
+flac = "^0.5.0"
+serde = { version = "1.0.145", features = ["derive"] }
+file-format = "0.8"

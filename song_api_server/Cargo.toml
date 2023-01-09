@@ -1,0 +1,16 @@
+[package]
+name = "song_api_server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.5.16"
+hyper = { version = "0.14.20", features = ["full"] }
+tokio = { version = "1.21.1", features = ["full"] }
+tower = "0.4.13"
+serde = { version = "1.0.145", features = ["derive"] }
+uuid = "1.1.2"
+
+song_meta = { path = "../song_meta"}
